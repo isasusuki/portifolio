@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Vintage</title>
+  <style>
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background-color: #fdf6f0;
+      color: #4a3f35;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e8d5c4;
+      text-align: center;
+      padding: 2rem;
+      border-bottom: 3px solid #c9b7a6;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #6b4f3f;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #5a4636;
+      border-bottom: 2px solid #d8cfc4;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fffaf5;
+      border: 2px solid #d8cfc4;
+      border-radius: 10px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 80%;   /* imagem menor */
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      color: #5a4636;
+    }
+
+    .btn-vintage {
+      display: inline-block;
+      background-color: #e8d5c4;
+      color: #4a3f35;
+      padding: 8px 16px;
+      border: 2px solid #c9b7a6;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-vintage:hover {
+      background-color: #d8cfc4;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e8d5c4;
+      padding: 1rem;
+      border-top: 3px solid #c9b7a6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio</h1>
+  </header>
+
+  <section id="trimestre1">
+    <h2>1º Trimestre js</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="imagem1.jpg" alt="Projeto 1">
+        <h3>Primeiras aulas back end</h3>
+        <p> as 6 primeiras aulas js</p>
+        <a href="https://isasusuki.github.io/In-cio-Back-End/teste.html" target="_blank" class="btn-vintage">Ver Trabalho</a>
+      </div>
+      
+        
+    </div>
+  </section>
+
+  <section id="trimestre2">
+    <h2>1º Trimestre pyton</h2>
+    
+       
+    </div>
+  </section>
+
+  <section id="trimestre3">
+    <h2>1º Trimestre html</h2>
+    
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Isabela - Todos os direitos reservados
+  </footer>
+</body>
+</html>
