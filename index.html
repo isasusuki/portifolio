@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+  <title>Portfólio Coquette</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Cormorant Garamond', serif;
@@ -14,84 +15,93 @@
     }
 
     header {
-      background-color: #e8d5c4;
+      background-color: #f3e5dc;
       text-align: center;
       padding: 2rem;
-      border-bottom: 3px solid #c9b7a6;
+      border-bottom: 3px dashed #d8cfc4;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
       margin: 0;
-      color: #6b4f3f;
+      color: #a67873;
     }
 
     section {
-      padding: 2rem;
+      padding: 3rem 2rem;
     }
 
     h2 {
-      color: #5a4636;
-      border-bottom: 2px solid #d8cfc4;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #a67873;
+      text-align: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px dashed #d8cfc4;
+      display: inline-block;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
     }
 
     .portfolio {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 30px;
     }
 
     .card {
-      background-color: #fffaf5;
-      border: 2px solid #d8cfc4;
-      border-radius: 10px;
-      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
-      padding: 1rem;
-      transition: transform 0.2s ease;
+      background-color: #fffaf8;
+      border: 1px solid #e3d5ca;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(200, 180, 170, 0.2);
+      padding: 1.5rem;
       text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(200, 180, 170, 0.3);
     }
 
     .card img {
-      width: 80%;   /* imagem menor */
-      max-width: 200px;
-      height: auto;
-      border-radius: 8px;
+      border: 6px solid #f3e5dc;
+      border-radius: 12px;
       margin-bottom: 1rem;
+      max-width: 200px;
+      width: 80%;
     }
 
     .card h3 {
       margin: 0.5rem 0;
       color: #5a4636;
+      font-weight: 600;
     }
 
     .btn-vintage {
       display: inline-block;
-      background-color: #e8d5c4;
+      background-color: #f3e5dc;
       color: #4a3f35;
       padding: 8px 16px;
       border: 2px solid #c9b7a6;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .btn-vintage:hover {
-      background-color: #d8cfc4;
+      background-color: #e8d5c4;
+      transform: scale(1.05);
     }
 
     footer {
       text-align: center;
-      background-color: #e8d5c4;
+      background-color: #f3e5dc;
       padding: 1rem;
-      border-top: 3px solid #c9b7a6;
+      border-top: 3px dashed #d8cfc4;
       font-size: 0.9rem;
+      color: #6b4f3f;
     }
   </style>
 </head>
@@ -100,157 +110,52 @@
     <h1>Portfólio</h1>
   </header>
 
+  <!-- Seção JS -->
   <section id="trimestre1">
-  <h2>1º Trimestre JS</h2>
-  <div class="portfolio">
-    <div class="card">
-      <img src="imagem1.jpg" alt="Projeto 1">
-      <h3>Primeiras aulas back end</h3>
-      <p>As 5 primeiras aulas JS (ignora o resto dos outros professor)</p>
-      <a href="https://github.com/isasusuki/In-cio-Back-End.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-
-    <div class="card">
-      <img src="imagem5.jpg" alt="Projeto 2">
-      <h3>Usando for</h3>
-      <p>Contas</p>
-      <a href="https://github.com/isasusuki/usandofor.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-
-    <div class="card">
-      <img src="imagem6.jpg" alt="Projeto 3">
-      <h3>Break/Continue</h3>
-      <p>Estacionamento</p>
-      <a href="https://github.com/isasusuki/breakcontinue.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-     <div class="card">
-      <img src="imagem9.jpg" alt="Projeto 3">
-      <h3>filtro</h3>
-      <p>filtrar idade</p>
-      <a href="https://github.com/isasusuki/filtro.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-     <div class="card">
-      <img src="imagem10.jpg" alt="Projeto 3">
-      <h3>informaçoes</h3>
-      <p>informaçoes pessoais</p>
-      <a href="https://github.com/isasusuki/informa-oes.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-     </div>
-     <div class="card">
-      <img src="imagem11.jpg" alt="Projeto 3">
-      <h3>leitura</h3>
-      <p>leitura de informaçoes</p>
-      <a href="https://github.com/isasusuki/leitura.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-     </div>
-    <div class="card">
-      <img src="imagem13.jpg" alt="Projeto 3">
-      <h3>contando numeros</h3>
-      <p>contagem de numeros</p>
-      <a href="https://github.com/isasusuki/contandonumeros.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-     </div>
-  <div class="card">
-      <img src="imagem17.jpg" alt="Projeto 3">
-      <h3>livros</h3>
-      <p>lista de livros</p>
-      <a href="https://github.com/isasusuki/listalivro.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-     </div>
-    <div class="card">
-      <img src="imagem19.jpg" alt="Projeto 3">
-      <h3>selection sort</h3>
-      <p></p>
-      <a href="https://github.com/isasusuki/selectionsort.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-     <div class="card">
-      <img src="imagem21.jpg" alt="Projeto 3">
-      <h3>carro</h3>
-      <p></p>
-      <a href="https://github.com/isasusuki/carro.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-    <div class="card">
-      <img src="imagem22.jpg" alt="Projeto 3">
-      <h3>operaçoes basicas</h3>
-      <p></p>
-      <a href="https://github.com/isasusuki/operacaobasica.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-    <div class="card">
-      <img src="imagem23.jpg" alt="Projeto 3">
-      <h3>media</h3>
-      <p> </p>
-      <a href="https://github.com/isasusuki/media.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-    <div class="card">
-      <img src="imagem24.jpg" alt="Projeto 3">
-      <h3>notas</h3>
-      <p></p>
-      <a href="https://github.com/isasusuki/notas.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-    <div class="card">
-      <img src="imagem25.jpg" alt="Projeto 3">
-      <h3>variaveis</h3>
-      <p> </p>
-      <a href="https://github.com/isasusuki/variaveis.git" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-  </div>
-</section>
-
-      
-    </div>
-  </section>
-
-  <section id="trimestreExtra">
-  <h2>1º Trimestre extra JS</h2>
-  <div class="portfolio"> <!-- usa a classe correta -->
-    <div class="card">
-      <img src="imagem20.jpg" alt="Projeto 3">
-      <h3>packman</h3>
-      <p>extra</p>
-      <a href="https://isasusuki.github.io/releiturapackman/index.html" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-    <div class="card">
-      <img src="imagem18.jpg" alt="Projeto 3">
-      <h3>álbum da copa</h3>
-      <p></p>
-      <a href="https://isasusuki.github.io/figurinhas/index.html" target="_blank" class="btn-vintage">Ver Trabalho</a>
-    </div>
-  </div>
-</section>
-
-    
-
-  <section id="trimestre3">
-    <h2>1º Trimestre gamma</h2>
+    <h2>1º Trimestre JS</h2>
     <div class="portfolio">
-      <div class="card">
-        <img src="imagem3.jpg" alt="Projeto 1">
-        <h3>gamma propriedade intelectual</h3>
-        <p> propriedade intectual</p>
-        <a href="https://gamma.app/docs/A-Importancia-da-Propriedade-Intelectual-na-Educacao-e4e4g1vzle3ye8j?mode=doc" target="_blank" class="btn-vintage">Ver Trabalho</a>
-      </div>
-      <div class="card">
-        <img src="imagem2.jpg" alt="Projeto 2">
-        <h3>gamma agenda escolar</h3>
-        <p>Desenvolvimento de app.</p>
-        <a href="https://gamma.app/docs/Agenda-Escolar-Digital-Organize-Lembre-e-Simplifique-a-Rotina-Esc-gamcjxovep014id?mode=doc" target="_blank" class="btn-vintage">Ver Trabalho</a>
-      </div>
-        <div class="card">
-        <img src="imagem8.jpg" alt="Projeto 2">
-        <h3>startups</h3>
-        <p>melhores de 2026</p>
-        <a href="https://gamma.app/docs/Startups-que-Definiram-2026-Arquitetos-do-Futuro-inguiz8fuq6bnmk" target="_blank" class="btn-vintage">Ver Trabalho</a>
-      </div>
-      <div class="card">
-      <img src="imagem12.jpg" alt="Projeto 3">
-      <h3>metricas e melhorias</h3>
-      <p>metricas e melhorias de negocio</p>
-      <a href="https://gamma.app/docs/Metricas-e-Melhorias-O-Combustivel-para-o-Sucesso-do-Seu-Negocio-bwq05fbnweicvmr?authuser=0" target="_blank" class="btn-vintage">Ver Trabalho</a>
-     </div>
+      <div class="card"><img src="imagem1.jpg" alt="Back-End JS"><h3>Primeiras aulas Back-End</h3><p>As 5 primeiras aulas JS</p><a href="https://github.com/isasusuki/In-cio-Back-End.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem5.jpg" alt="Usando for"><h3>Usando for</h3><p>Contas</p><a href="https://github.com/isasusuki/usandofor.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem6.jpg" alt="Break Continue"><h3>Break/Continue</h3><p>Estacionamento</p><a href="https://github.com/isasusuki/breakcontinue.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem9.jpg" alt="Filtro"><h3>Filtro</h3><p>Filtrar idade</p><a href="https://github.com/isasusuki/filtro.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem10.jpg" alt="Informações"><h3>Informações</h3><p>Informações pessoais</p><a href="https://github.com/isasusuki/informa-oes.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem11.jpg" alt="Leitura"><h3>Leitura</h3><p>Leitura de informações</p><a href="https://github.com/isasusuki/leitura.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem13.jpg" alt="Contando números"><h3>Contando números</h3><p>Contagem de números</p><a href="https://github.com/isasusuki/contandonumeros.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem17.jpg" alt="Livros"><h3>Livros</h3><p>Lista de livros</p><a href="https://github.com/isasusuki/listalivro.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem19.jpg" alt="Selection Sort"><h3>Selection Sort</h3><p>Algoritmo de ordenação</p><a href="https://github.com/isasusuki/selectionsort.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem21.jpg" alt="Carro"><h3>Carro</h3><p>Projeto simples</p><a href="https://github.com/isasusuki/carro.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem22.jpg" alt="Operações básicas"><h3>Operações básicas</h3><p>Matemática básica</p><a href="https://github.com/isasusuki/operacaobasica.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem23.jpg" alt="Média"><h3>Média</h3><p>Cálculo de média</p><a href="https://github.com/isasusuki/media.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem24.jpg" alt="Notas"><h3>Notas</h3><p>Gerenciamento de notas</p><a href="https://github.com/isasusuki/notas.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem25.jpg" alt="Variáveis"><h3>Variáveis</h3><p>Uso de variáveis</p><a href="https://github.com/isasusuki/variaveis.git" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+    
+      <!-- Todos os trabalhos JS -->
+      <!-- (cards que você já listou: variáveis, notas, média, carro, etc.) -->
     </div>
   </section>
-     
+
+  <!-- Seção Extra -->
+  <section id="trimestreExtra">
+    <h2>1º Trimestre Extra</h2>
+    <div class="portfolio">
+      <div class="portfolio">
+        <div class="card"><img src="imagem20.jpg" alt="Packman"><h3>Packman</h3><p>Extra</p><a href="https://isasusuki.github.io/releiturapackman/index.html" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+        <div class="card"><img src="imagem18.jpg" alt="Álbum da Copa"><h3>Álbum da Copa</h3><p>Extra</p><a href="https://isasusuki.github.io/figurinhas/index.html" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
     
-       
+      <!-- Packman, Álbum da Copa -->
+    </div>
+  </section>
+
+  <!-- Seção Gamma -->
+  <section id="trimestreGamma">
+    <h2>1º Trimestre Gamma</h2>
+    <div class="portfolio">
+      <div class="card"><img src="imagem3.jpg" alt="Propriedade Intelectual"><h3>Gamma Propriedade Intelectual</h3><p>Propriedade intelectual</p><a href="https://gamma.app/docs/A-Importancia-da-Propriedade-Intelectual-na-Educacao-e4e4g1vzle3ye8j?mode=doc" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem2.jpg" alt="Agenda Escolar"><h3>Gamma Agenda Escolar</h3><p>Desenvolvimento de app</p><a href="https://gamma.app/docs/Agenda-Escolar-Digital-Organize-Lembre-e-Simplifique-a-Rotina-Esc-gamcjxovep014id?mode=doc" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem8.jpg" alt="Startups"><h3>Startups</h3><p>Melhores de 2026</p><a href="https://gamma.app/docs/Startups-que-Definiram-2026-Arquitetos-do-Futuro-inguiz8fuq6bnmk" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
+      <div class="card"><img src="imagem12.jpg" alt="Métricas e Melhorias"><h3>Métricas e Melhorias</h3><p>Negócios</p><a href="https://gamma.app/docs/Metricas-e-Melhorias-O-Combustivel-para-o-Sucesso-do-Seu-Negocio-bwq05fbnweicvmr?authuser=0" target="_blank" class="btn-vintage">Ver Trabalho</a></div>
     
-      
-    
+      <!-- Propriedade Intelectual, Agenda Escolar, Startups, Métricas -->
     </div>
   </section>
 
@@ -259,11 +164,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
