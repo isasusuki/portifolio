@@ -10,12 +10,11 @@
       font-family: 'Cormorant Garamond', serif;
       margin: 0;
       padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background: url('tela.jpg') no-repeat center center/cover;
-      text-align: center;
       position: relative;
     }
     body::before {
@@ -25,67 +24,128 @@
       width: 100%; height: 100%;
       background-color: rgba(255, 255, 255, 0.6);
     }
-    .conteudo { position: relative; z-index: 1; }
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    .texto, .contatos {
+      flex: 1;
+      padding: 2rem;
+    }
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 4rem;
+      font-size: 3rem;
       color: #a67873;
       margin-bottom: 1rem;
-      animation: fadeInDown 1.5s ease;
     }
     .subtitulo {
       font-family: 'Raleway', sans-serif;
       font-size: 1.5rem;
       color: #4a3f35;
-      margin-bottom: 0.5rem;
-      animation: fadeIn 2s ease;
+      margin-bottom: 1rem;
     }
-    p { font-size: 1.2rem; color: #4a3f35; margin: 0.5rem 0; animation: fadeIn 2.5s ease; }
+    p { font-size: 1.2rem; color: #4a3f35; margin: 0.5rem 0; }
+    .contatos h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8rem;
+      color: #4a3f35;
+      margin-bottom: 1rem;
+    }
+    .contatos p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    .contatos a {
+      color: #a67873;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contatos a:hover {
+      text-decoration: underline;
+    }
+    img.logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #a67873;
+      margin-bottom: 1rem;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
     .btn-vintage {
-      display: inline-block;
       background-color: #f3e5dc;
       color: #4a3f35;
-      padding: 10px 30px;
+      padding: 10px 20px;
       border: 2px solid #c9b7a6;
       border-radius: 6px;
       text-decoration: none;
-      margin: 1rem;
       transition: background-color 0.3s ease, transform 0.2s ease;
       font-family: 'Great Vibes', cursive;
-      font-size: 2rem;
-      animation: fadeInUp 3s ease;
+      font-size: 1.5rem;
     }
     .btn-vintage:hover {
       background-color: #e8d5c4;
       transform: scale(1.1);
       box-shadow: 0 0 10px rgba(166, 120, 115, 0.6);
     }
-    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   </style>
 </head>
 <body>
-  <div class="conteudo">
-    <h1>Portfólio Coquette</h1>
-    <p class="subtitulo">Trabalho de Desenvolvimento</p>
-    <p>Isabela - 2026</p>
+  <div class="container">
+    <!-- Coluna de texto -->
+    <div class="texto">
+      <h1>Portfólio Coquette</h1>
+      <p class="subtitulo">Trabalho de Desenvolvimento</p>
+      <p>Isabela - 2026</p>
 
-    <!-- Introdução profissional -->
-    <p>
-      Meu nome é <strong>Isabela Susuki Honorio</strong>, tenho 17 anos e estudo no Polo em um ensino médio profissionalizante de Projeto de Sistemas. 
-      Sou apaixonada por tecnologia e inovação, com interesse especial em desenvolvimento de software, análise de sistemas e criação de soluções digitais. 
-      Durante minha formação, venho adquirindo experiência prática em linguagens de programação, desenvolvimento mobile e projetos de análise, sempre buscando unir criatividade e lógica para resolver problemas reais.
-    </p>
-    <p>
-      Além dos estudos, procuro constantemente evoluir minhas habilidades técnicas e interpessoais, participando de projetos que estimulam o trabalho em equipe, a comunicação e a organização. 
-      Meu objetivo é construir uma carreira sólida na área de tecnologia, contribuindo para soluções que impactem positivamente pessoas e empresas.
-    </p>
+      <img src="colegio.jpeg" alt="Logo da Escola" class="logo">
 
-    <!-- Botões -->
-    <a href="port.html" class="btn-vintage">1º Trimestre</a>
-    <a href="2port.html" class="btn-vintage">2º Trimestre</a>
-    <a href="https://www.linkedin.com/in/isabela-susuki-b79726319?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn-vintage">LinkedIn</a>
+      <p>
+        Estudo na <strong>Unidade Polo em Arapongas</strong>, que oferece ensino médio profissionalizante com foco em tecnologia e inovação. 
+        É um ambiente que valoriza o aprendizado prático e teórico, preparando os alunos para os desafios do mercado de trabalho.
+      </p>
+      <p>
+        Atualmente curso o <strong>Técnico em Projeto de Sistemas</strong>, onde desenvolvo competências em programação, análise de sistemas e criação de soluções digitais. 
+        Essa formação me proporciona uma base sólida para atuar em diferentes áreas da tecnologia, sempre unindo criatividade e lógica para resolver problemas reais.
+      </p>
+
+      <p>
+        Meu nome é <strong>Isabela Susuki Honorio</strong>, tenho 17 anos e estudo no Polo em um ensino médio profissionalizante de Projeto de Sistemas. 
+        Sou apaixonada por tecnologia e inovação, com interesse especial em desenvolvimento de software, análise de sistemas e criação de soluções digitais. 
+        Durante minha formação, venho adquirindo experiência prática em linguagens de programação, desenvolvimento mobile e projetos de análise, sempre buscando unir criatividade e lógica para resolver problemas reais.
+      </p>
+      <p>
+        Além dos estudos, procuro constantemente evoluir minhas habilidades técnicas e interpessoais, participando de projetos que estimulam o trabalho em equipe, a comunicação e a organização. 
+        Meu objetivo é construir uma carreira sólida na área de tecnologia, contribuindo para soluções que impactem positivamente pessoas e empresas.
+      </p>
+    </div>
+
+    <!-- Coluna de contatos -->
+    <div class="contatos">
+      <h2>Contatos</h2>
+      <p>Email: <a href="h.isabela@escola.pr.gov.br">h.isabela@escola.pr.gov.br</a></p>
+      <p>GitHub: <a href="https://github.com/isasusuki?tab=repositories" target="_blank">https://github.com/isasusuki?tab=repositories</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/isabela-susuki-b79726319" target="_blank">linkedin.com/in/isabela-susuki</a></p>
+      <p>Instagram: <a href="https://instagram.com/isabe.lla709" target="_blank">@isabe.lla709</a></p>
+      <p>Telefone: <a href="tel:+5543996462644">+55 (43) 99646-2644</a></p>
+
+      <!-- Botões lado a lado -->
+      <div class="btn-container">
+        <a href="port.html" class="btn-vintage">1º Trimestre</a>
+        <a href="2port.html" class="btn-vintage">2º Trimestre</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
